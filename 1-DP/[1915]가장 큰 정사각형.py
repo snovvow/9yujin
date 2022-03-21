@@ -20,7 +20,7 @@ for i in range(1, n):
             # 123
             # 12
             # 이런경우가 있어서!!
-            arr[i][j] = min(arr[i-1][j-1], arr[i][j-1], arr[j-1][i]) + 1
+            arr[i][j] = min(arr[i-1][j-1], arr[i][j-1], arr[i-1][j]) + 1
 
 maxnum = max(map(max, arr))
 print(maxnum ** 2)
