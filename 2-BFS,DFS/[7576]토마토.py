@@ -6,7 +6,7 @@ from collections import deque
 
 def bfs():
     while queue:
-        # 익은토마토 하나 큐에 넣어
+        # 익은토마토 하나 꺼내서 탐색시작
         x,y = queue.popleft()
         
         # 네가지 방향
