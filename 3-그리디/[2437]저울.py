@@ -1,5 +1,6 @@
 # https://seongonion.tistory.com/127
 
+
 import sys
 
 n = int(input())
