@@ -1,6 +1,3 @@
-from ipaddress import collapse_addresses
-
-
 #bfs : deque 사용
 from collections import deque
 
