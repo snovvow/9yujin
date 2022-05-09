@@ -25,9 +25,12 @@ print(answer)
 #321
 #---백트래킹 특---
 # https://moz1e.tistory.com/15
+
 """ def 재귀함수(depth):
+
     if 정답이라면? :
         정답 출력 or 저장
+
     else : 정답이 아니라면?
         for 뻗을 수 있는 모든 자식 노드에 대해서 :
             if 정답에 유망하다면 :
