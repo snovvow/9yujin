@@ -14,6 +14,6 @@ for i in sorted_comb:
     for ch in i:
         if ch in ['a','e','i','o','u']:
             count += 1
-    if count > 0 and 2 < l-count:
+    if count > 0 and 2 <= l-count:
         print(''.join(i))
     
