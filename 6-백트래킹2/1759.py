@@ -5,6 +5,7 @@ arr = sorted(list(input().split()))
 
 comb = list(combinations(arr, l))
 sorted_comb = []
+
 for i in range(len(comb)):
     list_comb = list(comb[i])
     sorted_comb.append(list_comb)
