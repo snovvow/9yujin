@@ -13,7 +13,7 @@ def union(a, b, turn):
 
     # 사이클 생겼을때
     if a == b:
-        if end != 0:
+        if end == 0:
             end = turn + 1
     else :
         if a < b:
@@ -24,9 +24,9 @@ def union(a, b, turn):
 # init
 end = 0
 n, m = map(int, sys.stdin. readline().split())
-parent = [0] * (n+1)
+parent = [0] * n
 
-for i in range(1, n+1):
+for i in range(n):
     parent[i] = i
 
 # 입력받아서, union find 해나가기

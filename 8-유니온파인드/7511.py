@@ -3,7 +3,7 @@ import sys
 testcase = int(input())
 
 for test in range(1, testcase+1):
-    print("Scenario :",test)
+    ans = []
     def find(x):
     # 루트 노드가 아니라면, 루트 노드를 찾을 때까지 재귀적으로 호출
         if parent[x] != x:
@@ -35,8 +35,11 @@ for test in range(1, testcase+1):
     for i in range(m):
         a, b = map(int, sys.stdin.readline().split())
         if find(a) == find(b):
-            print('1')
+            ans.append('1')
         else:
-            print('0')
-    if test <testcase:
+            ans.append('0')
+    print("Scenario ",test,":", sep="", end='\n')
+    for i in range(len(ans)):
+        print(ans[i])
+    if test != 1:
         print('\n')
