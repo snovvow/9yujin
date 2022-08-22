@@ -1,0 +1,2 @@
+password = input()
+k = input()

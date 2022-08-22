@@ -11,3 +11,4 @@ if stack == ppap or stack == ["P"]:
     print("PPAP")
 else:
     print("NP")
+# 블로그
