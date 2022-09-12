@@ -38,7 +38,7 @@ def sol():
                 get[i][0] = get[i][0] + space[i]
                 left = left - space[i]
                 space[i] = 0
-        
+        print(get)
         ans = [0] * N
         for i in get:
             ans[i[1]] = i[0]
