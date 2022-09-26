@@ -1,4 +1,4 @@
-""" s=input()
+s=input()
 
 # 처음부터 펠린드롬이면
 if s==s[::-1]:
@@ -30,10 +30,10 @@ else:
             else:
                 ln+=1
     else:
-        print(2*len(s)-1) """
+        print(2*len(s)-1)
 
 
-s= [1,2,3,4,5]
+""" s= [1,2,3,4,5]
 print(s[3::][::-1])
 print(s[3::-1])
-print(s[-3::-1])
+print(s[-3::-1]) """
