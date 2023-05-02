@@ -2,11 +2,8 @@ import heapq
 import sys
 INF = int(1e9)
 
-N, M, X = map(int, input().split())
-graph = [[] for _ in range(N+1)]
 
 def dijkstra(start):
-    distance = [INF] * (N+1)
     queue = []
     # (dist, now_x, now_y)
     heapq.heappush(queue, (0, start))
@@ -30,18 +27,12 @@ def dijkstra(start):
 
     return distance
 
-
-
+N,M = map(int, input().split())
+distance = [INF] * (N+1)
+graph = [[] for _ in range(N+1)]
 for _ in range(M):
     start, end, t = map(int, sys.stdin.readline().split())
     graph[start].append((end, t))
 
-ans = 0
-for i in range(1, N+1):
-    go = dijkstra(i)[X] # X마을로 가는거
-    back = dijkstra(X)[i] #X마을에서 오는거
-    ans = max(ans, go + back)
-
-print(ans)
-
-# 그냥 다익스트라!!
+dijkstra(1)
+print(distance)
